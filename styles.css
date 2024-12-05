@@ -1,0 +1,100 @@
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
+  
+  body {
+    background-color: #f0f4f8;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  /* Encabezado de la página */
+  .hero {
+    background-color: #0099cc;
+    color: #fff;
+    text-align: center;
+    padding: 2em 0;
+  }
+  
+  .hero h1 {
+    font-size: 2.5em;
+  }
+  
+  .hero p {
+    font-size: 1.2em;
+  }
+  
+  /* Secciones */
+  section {
+    padding: 2em;
+    max-width: 800px;
+    margin: auto;
+  }
+  
+  h2 {
+    color: #006699;
+    margin-bottom: 0.5em;
+  }
+  
+  /* Servicios */
+  #servicios ul {
+    list-style-type: none;
+  }
+  
+  #servicios li {
+    background: #e1f5fe;
+    padding: 1em;
+    margin: 0.5em 0;
+    border-left: 5px solid #0099cc;
+  }
+  
+  /* Formulario de contacto */
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  form label {
+    margin-top: 1em;
+  }
+  
+  form input, form textarea {
+    padding: 0.5em;
+    margin-top: 0.5em;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  form button {
+    background-color: #0099cc;
+    color: #fff;
+    padding: 0.7em;
+    border: none;
+    border-radius: 5px;
+    margin-top: 1em;
+    cursor: pointer;
+  }
+  
+  form button:hover {
+    background-color: #007799;
+  }
+  
+  /* Pie de página */
+  footer {
+    text-align: center;
+    padding: 1em;
+    background-color: #006699;
+    color: #fff;
+    margin-top: 2em;
+  }
+/* Estilo para el logo en el encabezado */
+.hero .logo {
+    width: 150px; /* Ajusta el tamaño según tus preferencias */
+    height: auto;
+    margin-bottom: 1em;
+  }
+    
