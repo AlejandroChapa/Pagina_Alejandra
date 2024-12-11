@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Tablero">
+
+    <!-- ScrollView que envuelve ambos tableros -->
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:contentDescription="Tablero de juego de batalla naval"
+        android:importantForAccessibility="yes"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- Título para el primer tablero -->
+            <TextView
+                android:id="@+id/texttutablero"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:gravity="center"
+                android:text="Tu Tablero:"
+                android:textSize="18sp" />
+
+            <!-- Primer GridLayout centrado en el LinearLayout -->
+            <GridLayout
+                android:id="@+id/tutablero"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:background="#ffffff"
+                android:columnCount="10"
+                android:contentDescription="Tablero 1, con botones de juego"
+                android:gravity="center"
+                android:importantForAccessibility="yes"
+                android:rowCount="10">
+                <!-- Contenido de botones del tablero aquí -->
+            </GridLayout>
+
+            <!-- Título para el segundo tablero -->
+            <TextView
+                android:id="@+id/textTablero2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:gravity="center"
+                android:text="Tablero Rival:"
+                android:textSize="18sp" />
+
+            <!-- Segundo GridLayout centrado en el LinearLayout -->
+            <GridLayout
+                android:id="@+id/tablerorival"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:background="#e0e0e0"
+                android:columnCount="10"
+                android:contentDescription="Tablero 2, con botones de juego"
+                android:gravity="center"
+                android:importantForAccessibility="yes"
+                android:rowCount="10">
+                <!-- Contenido de botones del tablero rival aquí -->
+            </GridLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- Botón para iniciar juego en la esquina superior derecha -->
+    <Button
+        android:id="@+id/bnt_disparo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="26dp"
+        android:layout_marginEnd="16dp"
+        android:text="Disparo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Botón para reiniciar juego en la esquina superior izquierda -->
+    <Button
+        android:id="@+id/btn_Rivalperfil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="26dp"
+        android:text="Perfil Rival"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Botón centrado en la parte inferior -->
+    <Button
+        android:id="@+id/btnRendirse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="Rendirse"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

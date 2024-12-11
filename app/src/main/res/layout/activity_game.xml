@@ -1,0 +1,116 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+
+        <!-- Toolbar -->
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:title="Game Activity"
+            android:background="?attr/colorPrimary" />
+
+        <!-- EditText y Button para invitar a un jugador -->
+        <EditText
+            android:id="@+id/editText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter username" />
+
+        <!-- Título de Juegos Activos -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_invite"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Send Challenge" />
+
+
+            <Button
+                android:id="@+id/btn_perfil"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerInParent="true"
+                android:text="Mi Perfil" />
+
+            <Button
+                android:id="@+id/btnActualizar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerInParent="true"
+                android:text="Actulizar Listas" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/editText1"
+                android:padding="8dp"
+                android:layout_width="291dp"
+                android:layout_height="wrap_content"
+                android:hint="Buscar partida(Usuario rival)" />
+
+            <Button
+                android:id="@+id/buscar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:padding="8dp"
+                android:text="Buscar" />
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/textViewActiveTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Juegos Activos"
+            android:textStyle="bold"
+            android:padding="8dp"
+            android:textSize="18sp" />
+
+        <!-- ListView para mostrar las partidas activas -->
+        <ListView
+            android:id="@+id/listViewActiveGames"
+            android:layout_width="match_parent"
+            android:layout_height="179dp"
+            android:dividerHeight="1dp" />
+
+        <!-- Título de Juegos Inactivos -->
+        <TextView
+            android:id="@+id/textViewInactiveTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Juegos Inactivos"
+            android:textStyle="bold"
+            android:padding="8dp"
+            android:textSize="18sp" />
+
+        <!-- ListView para mostrar las partidas inactivas -->
+        <ListView
+            android:id="@+id/listViewInactiveGames"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:dividerHeight="1dp" />
+
+    </LinearLayout>
+</ScrollView>

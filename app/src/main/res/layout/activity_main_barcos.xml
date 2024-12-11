@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Contenedor de botones para selección de barcos y rotación -->
+
+    <!-- Tablero de juego -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/Destroyer2celdas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:text="Destroyer 2celdas" />
+
+
+        <!-- Botón para el barco de 3 cuadros -->
+        <Button
+            android:id="@+id/crusier3celdas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:text="Submarine 3celdas" />
+
+        <!-- Botón para el barco de 3 cuadros -->
+        <Button
+            android:id="@+id/Submarine3celdas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:text="Cruiser 3celdas" />
+        <!-- Botón para el barco de 4 cuadros -->
+        <Button
+            android:id="@+id/Battleship4celdas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:padding="8dp"
+            android:text="Battleship 4celdas" />
+        <!-- Botón para el barco de 5 cuadros -->
+        <Button
+            android:id="@+id/carrier5celdas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:padding="8dp"
+            android:text="carrier 5celdas" />
+
+        <!-- Botón para cambiar orientación -->
+        <Button
+            android:id="@+id/buttonRotate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:padding="8dp"
+            android:text="Girar" />
+
+        <Button
+            android:id="@+id/quitarbarco"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:padding="8dp"
+            android:text="quitar barcos" />
+        <Button
+            android:id="@+id/enviar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:padding="8dp"
+            android:text="enviar" />
+    </LinearLayout>
+
+    <GridLayout
+        android:id="@+id/gridLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:rowCount="10"
+        android:columnCount="10"
+        android:layout_gravity="center"
+        android:background="#ffffff">
+    </GridLayout>
+
+</LinearLayout>
